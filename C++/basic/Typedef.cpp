@@ -1,5 +1,5 @@
 #include <iostream>
-#include <bits/stdc++.h>
+// #include <bits/stdc++.h>
 #include <stdint.h>
 
 
@@ -17,10 +17,8 @@ typedef st;
 
 
 
-int main(){
-
+int main(){ 
     myAgeType age =20;
-
     byte b1 =20;
     byte b2 =20;
 
