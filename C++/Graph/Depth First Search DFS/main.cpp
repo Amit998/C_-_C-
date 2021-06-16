@@ -18,13 +18,13 @@ class Graph{
     void dfs_helper(T src,map<T,bool> visited){
         cout<<src<<" ";
         visited[src]=true;
-        
+
         for(T nbr:l[src]){
             if(!visited[nbr]){
                 dfs_helper(nbr,visited);
             }
             
-            dfs_helper(src,visited);
+            
         }
     }
 
@@ -36,6 +36,7 @@ class Graph{
             T node=p.first;
             visited[node]=false
         }
+        dfs_helper(src,visited);
 
     }
 
